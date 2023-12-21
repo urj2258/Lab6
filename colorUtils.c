@@ -39,4 +39,46 @@ ErrorCode toSepia(int *r, int *g, int *b) {
     return INVALID_INPUT;
   }
 
+  int tr=(int)(0.393**r+0.769**g+0.189**b);
+  int tg=(int)(0.349**r+0.686**g+0.168**b);
+  int tb=(int)(0.272**r+0.534**g+0.131**b);
+
+   if(tr<0)
+  {
+    *r=0;
+  }
+  else if(tr>255)
+  {
+    *r=255;
+  }
+  else
+  {
+    *r=tr;
+  }
+
+  if(tg<0)
+  {
+    *g=0;
+  }
+  else if(tg>255)
+  {
+    *g=255;
+  }
+  else
+  {
+    *g=tg;
+  }
+
+  if(tb<0)
+  {
+    *b=0;
+  }
+  else if(tb>255)
+  {
+    *b=255;
+  }
+  else
+  {
+    *b=tb;
+  }
 }
