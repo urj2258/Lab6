@@ -8,11 +8,11 @@ typedef enum {
   LUMINOSITY
 } Mode;
 
-#endif /* MODE_H */
+typedef enum{
+  NO_ERROR,
+  INVALID_INPUT
+}ErrorCode;
 
-/**
- * Returns the maximum value among the three given values
- */
 int max(int a, int b, int c);
 
 /**
