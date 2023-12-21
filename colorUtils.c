@@ -34,4 +34,9 @@ ErrorCode toGrayScale(int *r, int *g, int *b, Mode mode) {
 
 ErrorCode toSepia(int *r, int *g, int *b) {
   //TODO: implement
+   if(*r<0 || *g<0 || *b<0 || *r>255 || *g>255 || *b>255)
+  {
+    return INVALID_INPUT;
+  }
+
 }
