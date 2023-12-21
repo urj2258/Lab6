@@ -17,6 +17,8 @@ ErrorCode toGrayScale(int *r, int *g, int *b, Mode mode) {
   {
     return INVALID_INPUT;
   }
+   int average=(*r+*g+*b)/3;
+
 }
 
 ErrorCode toSepia(int *r, int *g, int *b) {
