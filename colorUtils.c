@@ -81,4 +81,6 @@ ErrorCode toSepia(int *r, int *g, int *b) {
   {
     *b=tb;
   }
+
+  return NO_ERROR;
 }
